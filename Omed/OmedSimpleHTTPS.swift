@@ -24,7 +24,7 @@ class OmedSimpleHTTPS {
     }
     
     static func requestPinned(completionBlock: @escaping (String) -> Void) -> Void {
-        let url = URL(string: "https://warpnet.nl")
+        let url = URL(string: "https://2017.hack.lu/agenda/")
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: URLSessionPinningDelegate(), delegateQueue: nil)
         let task = session.dataTask(with: url!, completionHandler: { data, response, error in
             if(error != nil) {
@@ -59,7 +59,7 @@ class URLSessionPinningDelegate: NSObject, URLSessionDelegate {
                         let data = CFDataGetBytePtr(serverCertificateData);
                         let size = CFDataGetLength(serverCertificateData);
                         let cert1 = NSData(bytes: data, length: size)
-                        let file_der = Bundle.main.path(forResource: "warpnet", ofType: "cer")
+                        let file_der = Bundle.main.path(forResource: "pinned", ofType: "cer")
                         
                         if let file = file_der {
                             if let cert2 = NSData(contentsOfFile: file) {
