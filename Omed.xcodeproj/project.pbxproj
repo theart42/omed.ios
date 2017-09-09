@@ -10,6 +10,7 @@
 		010181B01F628AFE00BD298D /* OmedSimpleKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010181AF1F628AFE00BD298D /* OmedSimpleKeychain.swift */; };
 		010181B21F628FCB00BD298D /* OmedSimpleCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010181B11F628FCB00BD298D /* OmedSimpleCrypto.swift */; };
 		010181BD1F62BA7E00BD298D /* pinned.cer in Resources */ = {isa = PBXBuildFile; fileRef = 010181BC1F62BA7E00BD298D /* pinned.cer */; };
+		010181D21F644A4700BD298D /* OmedSimpleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010181D11F644A4700BD298D /* OmedSimpleUtils.swift */; };
 		01691C841F6045580015EDD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01691C831F6045580015EDD7 /* AppDelegate.swift */; };
 		01691C861F6045580015EDD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01691C851F6045580015EDD7 /* ViewController.swift */; };
 		01691C891F6045580015EDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01691C871F6045580015EDD7 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		010181B11F628FCB00BD298D /* OmedSimpleCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmedSimpleCrypto.swift; sourceTree = "<group>"; };
 		010181B41F629F3A00BD298D /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = ../BridgingHeader.h; sourceTree = "<group>"; };
 		010181BC1F62BA7E00BD298D /* pinned.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = pinned.cer; path = Resources/pinned.cer; sourceTree = "<group>"; };
+		010181D11F644A4700BD298D /* OmedSimpleUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmedSimpleUtils.swift; sourceTree = "<group>"; };
 		01691C801F6045580015EDD7 /* Omed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01691C831F6045580015EDD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01691C851F6045580015EDD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				01691C951F6047A40015EDD7 /* OmedSimpleIO.swift */,
 				010181AF1F628AFE00BD298D /* OmedSimpleKeychain.swift */,
 				01691C851F6045580015EDD7 /* ViewController.swift */,
+				010181D11F644A4700BD298D /* OmedSimpleUtils.swift */,
 			);
 			path = Omed;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				01691C861F6045580015EDD7 /* ViewController.swift in Sources */,
 				01691C841F6045580015EDD7 /* AppDelegate.swift in Sources */,
 				010181B21F628FCB00BD298D /* OmedSimpleCrypto.swift in Sources */,
+				010181D21F644A4700BD298D /* OmedSimpleUtils.swift in Sources */,
 				01691C9B1F6050540015EDD7 /* OmedSimpleHTTPS.swift in Sources */,
 				01691C961F6047A40015EDD7 /* OmedSimpleIO.swift in Sources */,
 			);

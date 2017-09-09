@@ -91,25 +91,10 @@ class OmedSimpleCrypto {
         let c = Cryptor()
         var msg = Bundle.main.infoDictionary!["CFBundleName"] as! String
         msg = msg + " crypt decrypted"
-        let key = randomAlphaNumericString(length: 16)
+        let key = Utils.randomAlphaNumericString(length: 16)
         
         let enc = c.cryptography(msg.data(using: .utf8)!, key: key, operation: Cryptor.encrypt)
         let dec = c.cryptography(enc!, key: key, operation: Cryptor.decrypt)
         return String(data: dec!, encoding: .utf8)!
-    }
-    
-    private static func randomAlphaNumericString(length: Int) -> String {
-        let allowedChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-        let allowedCharsCount = UInt32(allowedChars.characters.count)
-        var randomString = ""
-        
-        for _ in 0..<length {
-            let randomNum = Int(arc4random_uniform(allowedCharsCount))
-            let randomIndex = allowedChars.index(allowedChars.startIndex, offsetBy: randomNum)
-            let newCharacter = allowedChars[randomIndex]
-            randomString += String(newCharacter)
-        }
-        
-        return randomString
     }
 }

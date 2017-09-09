@@ -10,7 +10,9 @@ import Foundation
 
 class OmedSimpleHTTPS {
     static func request(completionBlock: @escaping (String) -> Void) -> Void {
-        let url = URL(string: "https://2017.hack.lu/")
+        let url = URL(string: "https://2017.hack.lu/?xyz=" +
+            Utils.randomAlphaNumericString(length: 16)
+        )
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let task = session.dataTask(with: url!, completionHandler: { data, response, error in
             if(error != nil) {
@@ -24,7 +26,9 @@ class OmedSimpleHTTPS {
     }
     
     static func requestPinned(completionBlock: @escaping (String) -> Void) -> Void {
-        let url = URL(string: "https://2017.hack.lu/agenda/")
+        let url = URL(string: "https://2017.hack.lu/?xyz=" +
+            Utils.randomAlphaNumericString(length: 16)
+        )
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: URLSessionPinningDelegate(), delegateQueue: nil)
         let task = session.dataTask(with: url!, completionHandler: { data, response, error in
             if(error != nil) {
