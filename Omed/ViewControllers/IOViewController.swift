@@ -11,7 +11,6 @@ import UIKit
 class IOViewController: UIViewController {
     @IBOutlet weak var TextViewOutput: UITextView!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +24,6 @@ class IOViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation

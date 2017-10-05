@@ -11,8 +11,8 @@ import UIKit
 class HTTPSViewController: UIViewController {
 
     @IBOutlet weak var WebView: UIWebView!
-    
     @IBOutlet weak var TextViewOutput: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,17 +31,8 @@ class HTTPSViewController: UIViewController {
                 self.TextViewOutput.text = output
             }
         }
-        
     }
-    
-//    @IBAction func readHTTPS()
-//    {
-//        OmedSimpleHTTPS.request() { (output) in
-//            DispatchQueue.main.async {
-//                self.TextViewOutput.text = output
-//            }
-//        }
-//    }
+
     /*
     // MARK: - Navigation
 

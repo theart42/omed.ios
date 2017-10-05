@@ -184,34 +184,6 @@ struct KeychainConfiguration {
 }
 
 class OmedSimpleKeychain {
-    public static func write() {
-        var password = Bundle.main.infoDictionary!["CFBundleName"] as! String
-        password = password + ".secret"
-        let accountName = "Omed"
-        let passwordItem = KeychainPasswordItem(service: KeychainConfiguration.serviceName, account: accountName, accessGroup: KeychainConfiguration.accessGroup)
-        do {
-            try passwordItem.savePassword(password)
-        }
-        catch {
-            print("Error saving password")
-        }
-    }
-//
-//    public static func read() -> String{
-//        let accountName = "Omed"
-//        let passwordItem = KeychainPasswordItem(service: KeychainConfiguration.serviceName, account: accountName, accessGroup: KeychainConfiguration.accessGroup)
-//
-//        do {
-//            let password = try passwordItem.readPassword()
-//            return password
-//        }
-//        catch {
-//            let msg = "Error loading password"
-//            print(msg)
-//            return msg
-//        }
-//    }
-//
     public static func writeValue(password:String){
         let accountName = "OmedCustom"
         let passwordItem = KeychainPasswordItem(service: KeychainConfiguration.serviceName, account: accountName, accessGroup: KeychainConfiguration.accessGroup)

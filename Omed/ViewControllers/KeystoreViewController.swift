@@ -16,6 +16,8 @@ class KeystoreViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //For the purpose of being able to hide the keyboard later.
         PasswordField.delegate = self as? UITextFieldDelegate
     }
 
@@ -30,6 +32,8 @@ class KeystoreViewController: UIViewController {
 
     @IBAction func submitPassword(_ sender: Any) {
         OmedSimpleKeychain.writeValue(password:PasswordField.text!)
+        
+        //Hide the keyboard down after hitting submit
         PasswordField.resignFirstResponder()
         
     }
