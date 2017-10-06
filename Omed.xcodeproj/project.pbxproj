@@ -13,6 +13,8 @@
 		010181D21F644A4700BD298D /* OmedSimpleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010181D11F644A4700BD298D /* OmedSimpleUtils.swift */; };
 		010181D41F644D2400BD298D /* Frameworks in Resources */ = {isa = PBXBuildFile; fileRef = 010181D31F644D2400BD298D /* Frameworks */; };
 		010181D61F644D2C00BD298D /* FridaGadget.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 010181D51F644D2C00BD298D /* FridaGadget.dylib */; };
+		013478DE1F87CDAC00FEA124 /* OmedSimpleJBdetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013478DD1F87CDAC00FEA124 /* OmedSimpleJBdetect.swift */; };
+		013478E31F87D2BC00FEA124 /* JBdetectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013478E21F87D2BC00FEA124 /* JBdetectViewController.swift */; };
 		015FECE51F869B77007D4F8B /* KeystoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015FECE41F869B77007D4F8B /* KeystoreViewController.swift */; };
 		015FECE71F86A3DB007D4F8B /* IOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015FECE61F86A3DB007D4F8B /* IOViewController.swift */; };
 		015FECE91F86AA3C007D4F8B /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015FECE81F86AA3C007D4F8B /* CryptoViewController.swift */; };
@@ -36,6 +38,8 @@
 		010181D11F644A4700BD298D /* OmedSimpleUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmedSimpleUtils.swift; sourceTree = "<group>"; };
 		010181D31F644D2400BD298D /* Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Frameworks; sourceTree = "<group>"; };
 		010181D51F644D2C00BD298D /* FridaGadget.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = FridaGadget.dylib; path = Frameworks/FridaGadget.dylib; sourceTree = "<group>"; };
+		013478DD1F87CDAC00FEA124 /* OmedSimpleJBdetect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmedSimpleJBdetect.swift; sourceTree = "<group>"; };
+		013478E21F87D2BC00FEA124 /* JBdetectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBdetectViewController.swift; sourceTree = "<group>"; };
 		015FECE41F869B77007D4F8B /* KeystoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoreViewController.swift; sourceTree = "<group>"; };
 		015FECE61F86A3DB007D4F8B /* IOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOViewController.swift; sourceTree = "<group>"; };
 		015FECE81F86AA3C007D4F8B /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		01FB64A51F8691400029AF3C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				013478E21F87D2BC00FEA124 /* JBdetectViewController.swift */,
 				01691C851F6045580015EDD7 /* ViewController.swift */,
 				01C83FA11F8675DB0052F246 /* HTTPSViewController.swift */,
 				01FB64A21F868DB50029AF3C /* HTTPSPinViewController.swift */,
@@ -137,6 +142,7 @@
 				01691C951F6047A40015EDD7 /* OmedSimpleIO.swift */,
 				010181AF1F628AFE00BD298D /* OmedSimpleKeychain.swift */,
 				010181D11F644A4700BD298D /* OmedSimpleUtils.swift */,
+				013478DD1F87CDAC00FEA124 /* OmedSimpleJBdetect.swift */,
 			);
 			path = OmedClasses;
 			sourceTree = "<group>";
@@ -222,11 +228,13 @@
 				010181B01F628AFE00BD298D /* OmedSimpleKeychain.swift in Sources */,
 				01691C861F6045580015EDD7 /* ViewController.swift in Sources */,
 				01691C841F6045580015EDD7 /* AppDelegate.swift in Sources */,
+				013478DE1F87CDAC00FEA124 /* OmedSimpleJBdetect.swift in Sources */,
 				015FECE91F86AA3C007D4F8B /* CryptoViewController.swift in Sources */,
 				01C83FA21F8675DB0052F246 /* HTTPSViewController.swift in Sources */,
 				015FECE71F86A3DB007D4F8B /* IOViewController.swift in Sources */,
 				010181B21F628FCB00BD298D /* OmedSimpleCrypto.swift in Sources */,
 				010181D21F644A4700BD298D /* OmedSimpleUtils.swift in Sources */,
+				013478E31F87D2BC00FEA124 /* JBdetectViewController.swift in Sources */,
 				01691C9B1F6050540015EDD7 /* OmedSimpleHTTPS.swift in Sources */,
 				01691C961F6047A40015EDD7 /* OmedSimpleIO.swift in Sources */,
 			);
